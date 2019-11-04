@@ -36,7 +36,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// PIVXMiner
+// BeaconMiner
 //
 
 //
@@ -474,9 +474,12 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
         LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         // Compute final coinbase transaction.
-        pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
-        if (!fProofOfStake) {
+        if (fProofOfStake) {
+            pblock->vtx[0].vin[0].scriptSig = CScript() << nHeight << OP_0;
+        } else if (!fProofOfStake) {
+            txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
             pblock->vtx[0] = txNew;
+	    pblock->vtx[0].vout[0].nValue = GetBlockValue(pindexPrev->nHeight);
             pblocktemplate->vTxFees[0] = -nFees;
         }
 
@@ -611,7 +614,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("PIVXMiner : generated block is stale");
+            return error("BeaconMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -633,7 +636,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
             pwalletMain->zpivTracker->RemovePending(pblock->vtx[1].GetHash());
             pwalletMain->zpivTracker->ListMints(true, true, true); //update the state
         }
-        return error("PIVXMiner : ProcessNewBlock, block not accepted");
+        return error("BeaconMiner : ProcessNewBlock, block not accepted");
     }
 
     for (CNode* node : vNodes) {
@@ -651,7 +654,7 @@ int nMintableLastCheck = 0;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("PIVXMiner started\n");
+    LogPrintf("BeaconMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("pivx-miner");
 
@@ -757,7 +760,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        LogPrintf("Running PIVXMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running BeaconMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -846,12 +849,12 @@ void static ThreadBitcoinMiner(void* parg)
         BitcoinMiner(pwallet, false);
         boost::this_thread::interruption_point();
     } catch (std::exception& e) {
-        LogPrintf("PIVXMiner exception");
+        LogPrintf("BeaconMiner exception");
     } catch (...) {
-        LogPrintf("PIVXMiner exception");
+        LogPrintf("BeaconMiner exception");
     }
 
-    LogPrintf("PIVXMiner exiting\n");
+    LogPrintf("BeaconMiner exiting\n");
 }
 
 void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)
