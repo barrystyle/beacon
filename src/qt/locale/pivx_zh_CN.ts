@@ -577,7 +577,7 @@
         <translation>发送数字货币到BECN地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
         <translation>请求支付（生成二维码和pivx：URIs）</translation>
     </message>
     <message>

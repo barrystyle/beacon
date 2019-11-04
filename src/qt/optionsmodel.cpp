@@ -171,8 +171,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizePivxAmount"))
-        SoftSetArg("-anonymizepivxamount", settings.value("nAnonymizePivxAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeBeaconAmount"))
+        SoftSetArg("-anonymizepivxamount", settings.value("nAnonymizeBeaconAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }

@@ -653,8 +653,8 @@
         <translation>An eine BECN-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und pivx: URIs)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und becn: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -871,8 +871,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "pivx.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "beacon.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -2130,14 +2130,14 @@ Falls das automatische Prägen aktiviert ist, wird sich dieser Prozentsatz um de
         <translation>Automatisches Prägen ist aktiv und eingestellt auf </translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Um das automatische Prägen zu deaktivieren, füge 'enablezeromint=0' in pivx.conf ein.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>Um das automatische Prägen zu deaktivieren, füge 'enablezeromint=0' in beacon.conf ein.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>Das automatische Prägen ist deaktiviert.
-Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablezeromint=1' in pivx.conf</translation>
+Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablezeromint=1' in beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2163,7 +2163,7 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>Ungültige Zahlungsaufforderungsadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
+        <source>Cannot start becn: click-to-pay handler</source>
         <translation>Kann BECN nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
@@ -2414,8 +2414,8 @@ Unreif: Bestätigt, aber keine Prägung in der selben Stückelung seit erfolgter
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2424,8 +2424,8 @@ To change the percentage (no restart required):
         <translation>Zeigt den aktuellen Status der automatischen zBECN-Prägung an
 
 Um den Status zu ändern (Neustart erforderlich): 
-- enable: füge 'enablezeromint = 1' zu pivx.conf hinzu
-- disable: füge 'enablezeromint = 0' zu pivx.conf hinzu
+- enable: füge 'enablezeromint = 1' zu beacon.conf hinzu
+- disable: füge 'enablezeromint = 0' zu beacon.conf hinzu
 
 Um den Prozentsatz zu ändern (kein Neustart erforderlich): 
 - Menü Einstellungen-&gt; Optionen-&gt; Prozentsatz der autom. zBECN
@@ -2716,7 +2716,7 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
+        <source>Invalid Beacon Address</source>
         <translation>Ungültige BECN-Adresse </translation>
     </message>
     <message>
@@ -4837,12 +4837,12 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Nicht genügend gestückeltes, verschleiertes Guthaben für diese Transaktion gefunden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 10000 BECN entsprechen.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Nicht genügend verschleiertes, nicht gestückeltes Guthaben für diese Transaktion gefunden, die nicht gleich 1000 BECN entsprechen.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 10000 BECN entsprechen.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Nicht genügend Guthaben für diese Transaktion gefunden, die nicht gleich 1000 BECN entsprechen.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

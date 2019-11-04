@@ -649,8 +649,8 @@
         <translation>Invia valuta all'indirizzo BECN</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e pivx: URIs)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e becn: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -864,8 +864,8 @@ MultiSend: %1</translation>
         <translation>Etichetta</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (pivx.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (beacon.conf)</translation>
     </message>
 </context>
 <context>
@@ -1803,14 +1803,14 @@ Se il conio automatico è attivato questa percentuale si stabilizzerà all'incir
         <translation>Conio automatico è attivo e impostato su</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Per disabilitare il conio automatico aggiungi 'enablezeromint=0' in pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>Per disabilitare il conio automatico aggiungi 'enablezeromint=0' in beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>Conio automatico è correntemente disattivato.
-Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=1' in pivx.conf</translation>
+Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=1' in beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -1956,8 +1956,8 @@ Gli zBECN sono maturi quando hanno più di 20 conferme E più di 2 conii della s
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -1965,8 +1965,8 @@ To change the percentage (no restart required):
 </source>
         <translation>Mostra lo stato corrente del conio automatico zBECN.
 Per cambiare lo stato (riavvio necessario):
-- attivato: aggiungi 'enablezeromint=1' a pivx.conf
-- disattivato: aggiungi 'enablezeromint=0' a pivx.conf
+- attivato: aggiungi 'enablezeromint=1' a beacon.conf
+- disattivato: aggiungi 'enablezeromint=0' a beacon.conf
 
 Per cambiare la percentuale (riavvio non necessario):
 - menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zBECN da coniare automaticamente

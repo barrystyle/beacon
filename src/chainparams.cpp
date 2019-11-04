@@ -163,8 +163,8 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 259200;
-        nPivxBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
-        nPivxBadBlocknBits = 0x1c056dac; // Skip nBit validation of Block 259201 per PR #915
+        nBeaconBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
+        nBeaconBadBlocknBits = 0x1c056dac; // Skip nBit validation of Block 259201 per PR #915
         nModifierUpdateBlock = 615800;
         nZerocoinStartHeight = 863787;
         nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
@@ -295,8 +295,8 @@ public:
         nMinerThreads = 0;
         nTargetSpacing = 1 * 60;  // PIVX: 1 minute
         nLastPOWBlock = 200;
-        nPivxBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
-        nPivxBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
+        nBeaconBadBlockTime = 1489001494; // Skip nBit validation of Block 259201 per PR #915
+        nBeaconBadBlocknBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
         nMaturity = 15;
         nStakeMinDepth = 100;
         nMasternodeCountDrift = 4;
@@ -334,8 +334,8 @@ public:
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx-testnet.seed2.fuzzbawls.pw"));
         vSeeds.push_back(CDNSSeedData("warrows.dev", "testnet.dnsseed.pivx.warrows.dev"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet pivx addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet pivx script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet beacon addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet beacon script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet pivx BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();

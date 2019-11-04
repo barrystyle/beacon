@@ -653,7 +653,7 @@
         <translation>Отправить монеты на BECN адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
         <translation>Запросить платежи (генерирует QR-код и BECN: URI)</translation>
     </message>
     <message>
@@ -872,8 +872,8 @@ MultiSend: %1</translation>
         <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2134,14 +2134,14 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <translation>Авточеканка в данный момен включена и установлена в</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>Авточеканка  в настоящее время отключена.
-Чтобы включить Авточеканку, измените 'enablezeromint = 0' на 'enablezeromint = 1' в файле pivx.conf</translation>
+Чтобы включить Авточеканку, измените 'enablezeromint = 0' на 'enablezeromint = 1' в файле beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2167,8 +2167,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Не удалось запустить pivx: обработчик click-to-pay </translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Не удалось запустить becn: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2418,8 +2418,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2428,8 +2428,8 @@ To change the percentage (no restart required):
         <translation>Показать текущий статус автоматической чеканки zBECN.
 
 Чтобы изменить статус (требуется перезагрузка):
-- включить: добавить 'enablezeromint = 1' в pivx.conf
-- отключить: добавить 'enablezeromint = 0' в pivx.conf
+- включить: добавить 'enablezeromint = 1' в beacon.conf
+- отключить: добавить 'enablezeromint = 0' в beacon.conf
 
 Чтобы изменить процент (не требуется перезагрузка):
 - меню Настройки-&gt; Параметры-&gt; Процент авторизованного zBECN</translation>
@@ -2719,7 +2719,7 @@ Please be patient...</source>
         <translation>Не предоставляется адрес «Pay To», создающий местный платеж</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
+        <source>Invalid Beacon Address</source>
         <translation>неправильный BECN адрес</translation>
     </message>
     <message>
@@ -4841,12 +4841,12 @@ Please be patient...</source>
         <translation>Не удалось найти достаточное количество средств, предназначенных для обфускации, для этой транзакции.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

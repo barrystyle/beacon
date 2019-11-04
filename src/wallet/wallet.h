@@ -88,12 +88,12 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 PIV at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 1000 BECN at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zPIV send
+// Possible states for zBECN send
 enum ZerocoinSpendStatus {
     ZPIV_SPEND_OKAY = 0,                            // No error
     ZPIV_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
@@ -109,7 +109,7 @@ enum ZerocoinSpendStatus {
     ZPIV_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
     ZPIV_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
     ZPIV_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZPIV_SPENT_USED_ZPIV = 14,                      // Coin has already been spend
+    ZPIV_SPENT_USED_ZBECN = 14,                      // Coin has already been spend
     ZPIV_TX_TOO_LARGE = 15,                          // The transaction is larger than the max tx size
     ZPIV_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 };
@@ -667,7 +667,7 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zPIV reset */
+    /** zBECN reset */
     boost::signals2::signal<void()> NotifyzPIVReset;
 
     /** notify wallet file backed up */

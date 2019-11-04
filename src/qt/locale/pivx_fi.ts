@@ -573,8 +573,8 @@
         <translation>Lähetä kolikkoja BECN osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja pivx: URIja)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja becn: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>

@@ -649,8 +649,8 @@
         <translation>Pošaljite kovanice na BECN adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Zahtjev za plaćanje (generira QR kodove i pivx: URI)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Zahtjev za plaćanje (generira QR kodove i becn: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -868,8 +868,8 @@ Višestruko slanje: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Nisu prikazane sve transakcije. Za pregled svih transakcija morate postaviti txindex = 1 u konfiguracijskoj datoteci (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2134,14 +2134,14 @@ Ako je omogućeno automatsko navođenje, ovaj postotak će se podmiriti oko konf
         <translation>AutoMint je trenutno omogućen i podešen na</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>Da biste onemogućili AutoMint, dodajte 'enablezeromint=0' u beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>AutoMint je trenutno onemogućen.
-Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u pivx.conf</translation>
+Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablezeromint=1' u beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2167,8 +2167,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti pivx: clik-to-pay handler</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti becn: clik-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2418,8 +2418,8 @@ Nezreli: potvrđeno, ali manje od 1 minta iste denominacije nakon mintanja</tran
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2428,8 +2428,8 @@ To change the percentage (no restart required):
         <translation>Pokažite trenutačni status automatskog zBECN mintanja.
 
 Da biste promijenili status (potrebno je ponovno pokretanje):
-- omogući: dodajte 'enablezeromint = 1' u pivx.conf
-- onemogućiti: dodajte 'enablezeromint = 0' na pivx.conf
+- omogući: dodajte 'enablezeromint = 1' u beacon.conf
+- onemogućiti: dodajte 'enablezeromint = 0' na beacon.conf
 
 Promjena postotka (nije potrebno ponovno pokretanje):
 - izbornik Postavke-&gt; Opcije-&gt; Postotak zBECN</translation>
@@ -2718,8 +2718,8 @@ Please be patient...</source>
         <translation>Nije dodijeljena adresa "Plati", stvarajući lokalnu uplatu</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Nevažeća Pivx Adresa</translation>
+        <source>Invalid Beacon Address</source>
+        <translation>Nevažeća Beacon Adresa</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -4844,12 +4844,12 @@ Please be patient...</source>
         <translation>Nije moguće locirati dovoljno sredstava s domenom Prikrivanja za tu transakciju.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Nije moguće pronaći dovoljno prikrivenih sredstava koja nisu denominirana za ovu transakciju koja nisu jednaka 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Nije moguće pronaći dovoljno sredstava za ovu transakciju koja nije jednaka 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

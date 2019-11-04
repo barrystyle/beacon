@@ -653,8 +653,8 @@
         <translation>Send coins to a BECN address</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Request payments (generates QR codes and pivx: URIs)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Request payments (generates QR codes and becn: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -872,8 +872,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2213,14 +2213,14 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <translation>AutoMint is currently enabled and set to </translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</translation>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2246,8 +2246,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Cannot start pivx: click-to-pay handler</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Cannot start becn: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2497,8 +2497,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2507,8 +2507,8 @@ To change the percentage (no restart required):
         <translation>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2812,8 +2812,8 @@ Please be patient...</translation>
         <translation>No 'Pay To' address provided, creating local payment</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Invalid Pivx Address</translation>
+        <source>Invalid Beacon Address</source>
+        <translation>Invalid Beacon Address</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -4969,12 +4969,12 @@ Please be patient...</translation>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

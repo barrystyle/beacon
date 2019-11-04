@@ -662,8 +662,8 @@ Użyj hasła składającego się z dziesięciu lub więcej losowych znaków lub 
         <translation>Wyślij monety do adresu BECN</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i pivx:URI)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i becn:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -885,8 +885,8 @@ MultiWysyłlka: %1</translation>
         <translation>TekstZakładka</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Nie wszystkie transakcje zostaną pokazane. Aby wyświetlić wszystkie transakcje, musisz ustawić txindex=1 w pliku konfiguracyjnym (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Nie wszystkie transakcje zostaną pokazane. Aby wyświetlić wszystkie transakcje, musisz ustawić txindex=1 w pliku konfiguracyjnym (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2261,14 +2261,14 @@ Jeśli włączona jest funkcja AutoMint, procent ten ustabilizuje się wokół s
         <translation>AutoMint jest obecnie włączony i ustawiony na</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Aby wyłączyć AutoMint, dodaj "enablezeromint = 0" w pliku pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>Aby wyłączyć AutoMint, dodaj "enablezeromint = 0" w pliku beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>Funkcja AutoMint jest obecnie wyłączona.
-Aby włączyć AutoMint zmień "enablezeromint = 0" na "enablezeromint = 1" w pliku pivx.conf</translation>
+Aby włączyć AutoMint zmień "enablezeromint = 0" na "enablezeromint = 1" w pliku beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2294,8 +2294,8 @@ Aby włączyć AutoMint zmień "enablezeromint = 0" na "enablezeromint = 1" w pl
         <translation>Nieprawidłowy adres płatności %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Nie można uruchomić pivx: click-to-pay handler</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Nie można uruchomić becn: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2545,8 +2545,8 @@ Niedojrzały: potwierdzony, ale mniej niż 1 mint o tym samym nominale po wybici
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2555,8 +2555,8 @@ To change the percentage (no restart required):
         <translation>Pokaż aktualny status automatycznego mint zBECN.
 
 Aby zmienić status (wymagany restart):
-- włącz: dodaj "enablezeromint = 1" do pliku pivx.conf
-- wyłącz: dodaj "enablezeromint = 0" do pliku pivx.conf
+- włącz: dodaj "enablezeromint = 1" do pliku beacon.conf
+- wyłącz: dodaj "enablezeromint = 0" do pliku beacon.conf
 
 Aby zmienić procent (bez ponownego uruchamiania):
 - menu Ustawienia-&gt; Opcje-&gt; Procent autominted zBECN
@@ -2860,8 +2860,8 @@ Proszę być cierpliwym...</translation>
         <translation>Nie podano adresu "Zapłać do", tworząc płatność lokalną</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Nieprawidłowy adres Pivx</translation>
+        <source>Invalid Beacon Address</source>
+        <translation>Nieprawidłowy adres Beacon</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -5131,12 +5131,12 @@ Proszę być cierpliwym...</translation>
         <translation>Nie można znaleźć wystarczającej liczby funduszy ukrytych dla tej transakcji.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Nie można zlokalizować wystarczająco dużo zaciemnionych Środków. Ta transakcja nie jest równa 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Nie można zlokalizować wystarczająco dużo zaciemnionych Środków. Ta transakcja nie jest równa 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Nie można zlokalizować wystarczająco dużo Środków. Ta transakcja nie jest równa 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Nie można zlokalizować wystarczająco dużo Środków. Ta transakcja nie jest równa 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

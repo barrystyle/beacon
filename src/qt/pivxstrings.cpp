@@ -212,7 +212,7 @@ QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 BECN."),
+"transaction that are not equal 1000 BECN."),
 QT_TRANSLATE_NOOP("pivx-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
 "BECN."),

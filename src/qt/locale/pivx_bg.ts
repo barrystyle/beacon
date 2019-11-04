@@ -255,7 +255,7 @@
     </message>
     <message>
         <source>Enter a BECN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Pivx адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
+        <translation>Въведете Beacon адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания таен ключ. </translation>
     </message>
     <message>
         <source>The BECN address to encrypt</source>
@@ -649,7 +649,7 @@
         <translation>Изпратете монети до BECN адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
         <translation>Поискай плащане (генерира QR кодове и  BECN:URI)</translation>
     </message>
     <message>
@@ -868,8 +868,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2123,14 +2123,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>АвтоЕмисията е включена и настроена на</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Да изключите АвтоЕмисия добавете  'enablezeromint=0' в pivx.conf файла.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>Да изключите АвтоЕмисия добавете  'enablezeromint=0' в beacon.conf файла.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>АвтоЕмисия е изключено.
-За да включите АвтоЕмисия сменете 'enablezeromint=0' на 'enablezeromint=1' в pivx.conf файла.</translation>
+За да включите АвтоЕмисия сменете 'enablezeromint=0' на 'enablezeromint=1' в beacon.conf файла.</translation>
     </message>
 </context>
 <context>
@@ -2156,8 +2156,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Провал при стартирането на pivx: click-to-pay обработвател</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Провал при стартирането на becn: click-to-pay обработвател</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2407,8 +2407,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2417,8 +2417,8 @@ To change the percentage (no restart required):
         <translation>Покажи състоянието на автоматичното zBECN емитиране.
 
 За да пормените състоянието (изисква рестарт):
-- вклчване: добавете 'enablezeromint=1' в pivx.conf
-- изключване: добавете 'enablezeromint=0' в pivx.conf
+- вклчване: добавете 'enablezeromint=1' в beacon.conf
+- изключване: добавете 'enablezeromint=0' в beacon.conf
 
 За промяна в процентите (не изисква рестарт):
 - меню Настройки -&gt; Опции -&gt; Процент на автоемитиран zBECN
@@ -2709,7 +2709,7 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
+        <source>Invalid Beacon Address</source>
         <translation>Невалиден BECN адрес</translation>
     </message>
     <message>
@@ -4830,12 +4830,12 @@ Please be patient...</source>
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Не намираме достатъчно средства за този превод, които да не са равни на 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

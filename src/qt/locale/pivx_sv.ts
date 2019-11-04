@@ -665,8 +665,8 @@
         <translation>Skicka mynt till en BECN adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och pivx: URls)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och becn: URls)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -908,8 +908,8 @@ MultiSend: %1</translation>
         <translation>text etikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Alla transaktioner kommer inte visas. För att visa alla transaktioner behöver du sätta txindex=1 i konfigurationsfilen (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Alla transaktioner kommer inte visas. För att visa alla transaktioner behöver du sätta txindex=1 i konfigurationsfilen (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2289,14 +2289,14 @@ Om AutoMint är tillåten så kommer denna procent att vara som den konfigurerad
         <translation>AutoMint är för tillfället aktiverat och inställt på</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>För att inaktivera AutoMint, lägg till 'enablezeromint=0' i pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>För att inaktivera AutoMint, lägg till 'enablezeromint=0' i beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>AutoMint är för närvarande inaktiverat.
-För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i pivx.conf</translation>
+För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2322,8 +2322,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
         <translation>Ogiltig betalningsadress %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Kan ej starta pivx: klicka-för-att-betala hanterare</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Kan ej starta becn: klicka-för-att-betala hanterare</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2573,8 +2573,8 @@ Omogna: bekräftade men under 1 myntning av samma valör efter den blev präglad
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2583,8 +2583,8 @@ To change the percentage (no restart required):
         <translation>Visa den nuvarande statusen av automatisk zBECN minting.
 
 För att ändra statusen (omstart krävs):
--aktivera: lägg till 'enablezeromint=1' i pivx.conf
--inaktivera: lägg till 'enablezeromint=0' i pivx.conf
+-aktivera: lägg till 'enablezeromint=1' i beacon.conf
+-inaktivera: lägg till 'enablezeromint=0' i beacon.conf
 
 För att ändra procenten (ingen omstart krävs):
 -meny Inställningar-&gt;Alternativ-&gt;Procent på autominted zBECN
@@ -2896,8 +2896,8 @@ Ha lite tålamod...</translation>
         <translation>Ingen 'Betala Till' adress inmatad, skapar lokal betalning</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Ogiltig Pivx Adress</translation>
+        <source>Invalid Beacon Address</source>
+        <translation>Ogiltig Beacon Adress</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -5149,12 +5149,12 @@ Var tålmodig...</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

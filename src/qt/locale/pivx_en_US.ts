@@ -239,8 +239,8 @@
         <translation>&amp;BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a Beacon Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a Beacon Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Address:</source>
@@ -610,8 +610,8 @@
         <translation>Send coins to a BECN address</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Request payments (generates QR codes and pivx: URIs)</translation>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
+        <translation>Request payments (generates QR codes and becn: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -837,8 +837,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -1544,32 +1544,32 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 BECN</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 BECN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 BECN</source>
+        <translation>Use 2 separate masternodes to mix funds up to 1000 BECN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 BECN</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 BECN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 BECN</source>
+        <translation>Use 8 separate masternodes to mix funds up to 1000 BECN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BECN to anonymize 10000 BECN</source>
-        <translation>This option is the quickest and will cost about ~0.025 BECN to anonymize 10000 BECN</translation>
+        <source>This option is the quickest and will cost about ~0.025 BECN to anonymize 1000 BECN</source>
+        <translation>This option is the quickest and will cost about ~0.025 BECN to anonymize 1000 BECN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BECN to anonymize 10000 BECN</source>
-        <translation>This option is moderately fast and will cost about 0.05 BECN to anonymize 10000 BECN</translation>
+        <source>This option is moderately fast and will cost about 0.05 BECN to anonymize 1000 BECN</source>
+        <translation>This option is moderately fast and will cost about 0.05 BECN to anonymize 1000 BECN</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 BECN per 10000 BECN you anonymize.</source>
-        <translation>0.1 BECN per 10000 BECN you anonymize.</translation>
+        <source>0.1 BECN per 1000 BECN you anonymize.</source>
+        <translation>0.1 BECN per 1000 BECN you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -2092,8 +2092,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Cannot start pivx: click-to-pay handler</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Cannot start becn: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -4082,7 +4082,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use pivxd, or the -server option to pivx-qt, you must set an rpcpassword in the configuration file:
+        <source>To use beacond, or the -server option to pivx-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=pivxrpc
@@ -4093,7 +4093,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "BECN Alert" admin@foo.com
 </source>
-        <translation>To use pivxd, or the -server option to pivx-qt, you must set an rpcpassword in the configuration file:
+        <translation>To use beacond, or the -server option to pivx-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
 rpcuser=pivxrpc
@@ -4114,12 +4114,12 @@ for example: alertnotify=echo %%s | mail -s "BECN Alert" admin@foo.com
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

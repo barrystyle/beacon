@@ -661,7 +661,7 @@
         <translation>Envoyer des pièces à une adresse BECN</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
+        <source>Request payments (generates QR codes and becn: URIs)</source>
         <translation>Requêtes de paiements (Génère des QR codes et des URIs BECN)</translation>
     </message>
     <message>
@@ -884,8 +884,8 @@ Adresse : %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (beacon.conf).</source>
+        <translation>Toutes les transaction ne seront pas affichés. Pour voir toutes les transactions, vous devez régler txindex=1 dans le fichier de configuration (beacon.conf).</translation>
     </message>
 </context>
 <context>
@@ -2265,14 +2265,14 @@ Si l'Auto-monnayage est activé, ce pourcentage sera réglé au niveau du pource
         <translation>Auto-monnayage est actuellement activé et mis à</translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in beacon.conf.</source>
+        <translation>Pour désactiver Auto-monnayage, ajoutez 'enablezeromint = 0' dans beacon.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in beacon.conf</source>
         <translation>Auto-monnayage est actuellement désactivé.
-Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier pivx.conf</translation>
+Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1' dans le fichier beacon.conf</translation>
     </message>
 </context>
 <context>
@@ -2298,8 +2298,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Impossible de démarrer pivx: gestionnaire click-to-pay</translation>
+        <source>Cannot start becn: click-to-pay handler</source>
+        <translation>Impossible de démarrer becn: gestionnaire click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
@@ -2549,8 +2549,8 @@ Immature: confirmé, mais moins de 1 monnaie de la même dénomination après sa
         <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to beacon.conf
+- disable: add 'enablezeromint=0' to beacon.conf
 
 To change the percentage (no restart required):
 - menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
@@ -2559,8 +2559,8 @@ To change the percentage (no restart required):
         <translation>Afficher l'état actuel de l'Auto-monnayage zBECN.
 
 Pour changer le statut (redémarrage requis):
-- enable: ajoute 'enablezeromint = 1' au fichier pivx.conf
-- disable: ajoute 'enablezeromint = 0' au fichier pivx.conf
+- enable: ajoute 'enablezeromint = 1' au fichier beacon.conf
+- disable: ajoute 'enablezeromint = 0' au fichier beacon.conf
 
 Pour changer le pourcentage (pas de redémarrage requis):
 - menu Paramètres-&gt; Options-&gt; Pourcentage de zBECN auto-monnayé
@@ -2864,8 +2864,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Aucune adresse 'Payer à' de fournie, création d'un paiement local</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Adresse Pivx incorrecte</translation>
+        <source>Invalid Beacon Address</source>
+        <translation>Adresse Beacon incorrecte</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -5143,12 +5143,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 BECN.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 1000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
-        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 BECN.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BECN.</source>
+        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 1000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
