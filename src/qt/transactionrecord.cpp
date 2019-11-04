@@ -45,7 +45,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
     bool fZSpendFromMe = false;
 
     if (wtx.HasZerocoinSpendInputs()) {
-        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZBECNModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
+        libzerocoin::CoinSpend zcspend = wtx.HasZerocoinPublicSpendInputs() ? ZPIVModule::parseCoinSpend(wtx.vin[0]) : TxInToZerocoinSpend(wtx.vin[0]);
         fZSpendFromMe = wallet->IsMyZerocoinSpend(zcspend.getCoinSerialNumber());
     }
 
