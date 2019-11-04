@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi PIVX per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your BECN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi BECN per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi PIVX per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your BECN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi BECN per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi PIV dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>BECN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BECNs from being stolen by malware infecting your computer.</source>
+        <translation>BECN verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi BECN dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI PIV&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BECN&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI BECN&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo PIVX da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a BECN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo BECN da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
-        <translation>Indirizzo PIVX da crittografare</translation>
+        <source>The BECN address to encrypt</source>
+        <translation>Indirizzo BECN da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo PIVX</translation>
+        <source>Encrypt the private key for this BECN address</source>
+        <translation>Crittografa la chiave privata per questo indirizzo BECN</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Operazioni di privacy per zPIV</translation>
+        <source>Privacy Actions for zBECN</source>
+        <translation>Operazioni di privacy per zBECN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -641,12 +641,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Invia valuta all'indirizzo PIVX</translation>
+        <source>Send coins to a BECN address</source>
+        <translation>Invia valuta all'indirizzo BECN</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -665,24 +665,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;Informazioni PIVX Core</translation>
+        <source>&amp;About Beacon</source>
+        <translation>&amp;Informazioni Beacon</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Visualizza informazioni su PIVX Core</translation>
+        <source>Show information about Beacon</source>
+        <translation>Visualizza informazioni su Beacon</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modifica le opzioni di configurazione per PIVX</translation>
+        <source>Modify configuration options for BECN</source>
+        <translation>Modifica le opzioni di configurazione per BECN</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi PIVX per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your BECN addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi BECN per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi PIVX specifici</translation>
+        <source>Verify messages to ensure they were signed with specified BECN addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi BECN specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -713,8 +713,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Apri un PIVX: URI o richiesta di pagamento</translation>
+        <source>Open a BECN: URI or payment request</source>
+        <translation>Apri un BECN: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -725,12 +725,12 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Mostra il messaggio di aiuto PIVX Core per ottenere un elenco con le possibili opzioni di riga di comando PIVX</translation>
+        <source>Show the Beacon help message to get a list with possible BECN command-line options</source>
+        <translation>Mostra il messaggio di aiuto Beacon per ottenere un elenco con le possibili opzioni di riga di comando BECN</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon client</source>
+        <translation>Beacon</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1103,7 +1103,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Può variare di +/- %1 uPIV per input.</translation>
+        <translation>Può variare di +/- %1 uBECN per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1149,8 +1149,8 @@ MultiSend: %1</translation>
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo PIVX valido.</translation>
+        <source>The entered address "%1" is not a valid BECN address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo BECN valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1206,16 +1206,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>Informazioni su PIVX Core</translation>
+        <source>About Beacon</source>
+        <translation>Informazioni su Beacon</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1261,16 +1261,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Benvenuto in PIVIX Core.</translation>
+        <source>Welcome to Beacon.</source>
+        <translation>Benvenuto in BECNIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove PIVX Core salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where Beacon will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Beacon salverà i propri dati.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core scaricherà e salverà una copia della blockchain PIVX. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>Beacon will download and store a copy of the BECN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Beacon scaricherà e salverà una copia della blockchain BECN. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1281,8 +1281,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1423,12 +1423,12 @@ MultiSend: %1</translation>
         <translation>Inserire indirizzo destinatario</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other BECN addresses after it matures.
+To Add: enter percentage to give and BECN address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi PIVX fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
-Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo PIVX da aggiungere al vettore MultiSend.
+        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi BECN fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
+Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo BECN da aggiungere al vettore MultiSend.
 Per Eliminare: Inserisci l'indirizzo da eliminare e premi elimina.
 MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
     </message>
@@ -1638,24 +1638,24 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Attiva il conio automatico di unità PIV in zPIV</translation>
+        <source>Enable automatic minting of BECN units to zBECN</source>
+        <translation>Attiva il conio automatico di unità BECN in zBECN</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Attiva Conio automatico zPIV</translation>
+        <source>Enable zBECN Automint</source>
+        <translation>Attiva Conio automatico zBECN</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di PIV in entrata che viene automaticamente convertita in zPIV attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming BECN which get automatically converted to zBECN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di BECN in entrata che viene automaticamente convertita in zBECN attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentuale di zPIV Percentuale di zPIV da coniare automaticamente</translation>
+        <source>Percentage of autominted zBECN</source>
+        <translation>Percentuale di zBECN Percentuale di zBECN da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Denominazione preferita conio automatico zPIV</translation>
+        <source>Preferred Automint zBECN Denomination</source>
+        <translation>Denominazione preferita conio automatico zBECN</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1717,8 +1717,8 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>Bilancio PIV</translation>
+        <source>BECN Balance</source>
+        <translation>Bilancio BECN</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1729,18 +1729,18 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Saldo corrente bloccato in indirizzi sola-lettura.</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Il tuo saldo PIVX corrente, incluse le transazioni non confermate e non mature</translation>
+        <source>Your current BECN balance, unconfirmed and immature transactions included</source>
+        <translation>Il tuo saldo BECN corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>Bilancio zPIV</translation>
+        <source>zBECN Balance</source>
+        <translation>Bilancio zBECN</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zBECN are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi zPIV sono spendibili.</translation>
+Questi zBECN sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1771,8 +1771,8 @@ Questi zPIV sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>PIV bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zPIV.</translation>
+        <source>Locked BECN or Masternode collaterals. These are excluded from zBECN minting.</source>
+        <translation>BECN bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zBECN.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1783,18 +1783,18 @@ Questi zPIV sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Il tuo saldo zPIV corrente, inclusi zPIV non confermati e non maturi</translation>
+        <source>Your current zBECN balance, unconfirmed and immature zBECN included.</source>
+        <translation>Il tuo saldo zBECN corrente, inclusi zBECN non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zBECN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di zPIV.
+        <translation>Percentuale corrente di zBECN.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
@@ -1858,8 +1858,8 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zBECN</source>
+        <translation>zBECN</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1870,12 +1870,12 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>Controllo zPIV</translation>
+        <source>zBECN Control</source>
+        <translation>Controllo zBECN</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>zPIV selezionati:</translation>
+        <source>zBECN Selected:</source>
+        <translation>zBECN selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1886,23 +1886,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>zPIV disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) zBECN for spending</source>
+        <translation>zBECN disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zBECN for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zPIV disponibili disponibili per essere spesi (maturi e spendibili)
-Gli zPIV sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+zBECN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zBECN disponibili disponibili per essere spesi (maturi e spendibili)
+Gli zBECN sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zBECN</source>
+        <translation>0 zBECN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1945,31 +1945,31 @@ Gli zPIV sono maturi quando hanno più di 20 conferme E più di 2 conii della st
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Saldo totale inclusi zPIV non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature zBECN</source>
+        <translation>Saldo totale inclusi zBECN non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico zPIV.
+        <translation>Mostra lo stato corrente del conio automatico zBECN.
 Per cambiare lo stato (riavvio necessario):
 - attivato: aggiungi 'enablezeromint=1' a pivx.conf
 - disattivato: aggiungi 'enablezeromint=0' a pivx.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zPIV da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zBECN da coniare automaticamente
 
 </translation>
     </message>
@@ -2110,8 +2110,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Differenza:</translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>Conio zPIV</translation>
+        <source>zBECN Mint</source>
+        <translation>Conio zBECN</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2148,8 +2148,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     </context>
 <context>
@@ -2411,8 +2411,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>L'indirizzo PIVX per firmare il messaggio con</translation>
+        <source>The BECN address to sign the message with</source>
+        <translation>L'indirizzo BECN per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2435,16 +2435,16 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo PIVX</translation>
+        <source>Sign the message to prove you own this BECN address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo BECN</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>L'indirizzo PIVX con cui è stato firmato il messaggio</translation>
+        <source>The BECN address the message was signed with</source>
+        <translation>L'indirizzo BECN con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo PIVX specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified BECN address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo BECN specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2482,8 +2482,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     </context>
 <context>
@@ -2600,8 +2600,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zBECN</source>
+        <translation>zBECN</translation>
     </message>
     </context>
 <context>

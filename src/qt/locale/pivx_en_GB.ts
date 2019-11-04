@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your BECN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your BECN addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your BECN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your BECN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</translation>
+        <source>BECN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BECNs from being stolen by malware infecting your computer.</source>
+        <translation>BECN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BECNs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BECN&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BECN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Address:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a BECN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a BECN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
-        <translation>The PIVX address to encrypt</translation>
+        <source>The BECN address to encrypt</source>
+        <translation>The BECN address to encrypt</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
-        <translation>Encrypt the private key for this PIVX address</translation>
+        <source>Encrypt the private key for this BECN address</source>
+        <translation>Encrypt the private key for this BECN address</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Browse transaction history</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Privacy Actions for zPIV</translation>
+        <source>Privacy Actions for zBECN</source>
+        <translation>Privacy Actions for zBECN</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,12 +645,12 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Send coins to a PIVX address</translation>
+        <source>Send coins to a BECN address</source>
+        <translation>Send coins to a BECN address</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and pivx: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;About PIVX Core</translation>
+        <source>&amp;About Beacon</source>
+        <translation>&amp;About Beacon</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Show information about PIVX Core</translation>
+        <source>Show information about Beacon</source>
+        <translation>Show information about Beacon</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modify configuration options for PIVX</translation>
+        <source>Modify configuration options for BECN</source>
+        <translation>Modify configuration options for BECN</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Sign messages with your PIVX addresses to prove you own them</translation>
+        <source>Sign messages with your BECN addresses to prove you own them</source>
+        <translation>Sign messages with your BECN addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Verify messages to ensure they were signed with specified PIVX addresses</translation>
+        <source>Verify messages to ensure they were signed with specified BECN addresses</source>
+        <translation>Verify messages to ensure they were signed with specified BECN addresses</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Open Masternode configuration file</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Open a PIVX: URI or payment request</translation>
+        <source>Open a BECN: URI or payment request</source>
+        <translation>Open a BECN: URI or payment request</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,12 +729,12 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Show the PIVX Core help message to get a list with possible PIVX command-line options</translation>
+        <source>Show the Beacon help message to get a list with possible BECN command-line options</source>
+        <translation>Show the Beacon help message to get a list with possible BECN command-line options</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core client</translation>
+        <source>Beacon client</source>
+        <translation>Beacon client</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1165,8 +1165,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>The entered address "%1" is not a valid PIVX address.</translation>
+        <source>The entered address "%1" is not a valid BECN address.</source>
+        <translation>The entered address "%1" is not a valid BECN address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1222,16 +1222,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>About PIVX Core</translation>
+        <source>About Beacon</source>
+        <translation>About Beacon</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1277,16 +1277,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Welcome to PIVX Core.</translation>
+        <source>Welcome to Beacon.</source>
+        <translation>Welcome to Beacon.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Beacon will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Beacon will store its data.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Beacon will download and store a copy of the BECN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Beacon will download and store a copy of the BECN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1297,8 +1297,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1439,12 +1439,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other BECN addresses after it matures.
+To Add: enter percentage to give and BECN address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other BECN addresses after it matures.
+To Add: enter percentage to give and BECN address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -1702,8 +1702,8 @@ Please be patient after clicking import.</translation>
         <translation>Address / Amount:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Add destinations to send PIV to</translation>
+        <source>Add destinations to send BECN to</source>
+        <translation>Add destinations to send BECN to</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1836,8 +1836,8 @@ Please be patient after clicking import.</translation>
         <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the BECN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the BECN client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1856,12 +1856,12 @@ Please be patient after clicking import.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automatically start PIVX after logging in to the system.</translation>
+        <source>Automatically start BECN after logging in to the system.</source>
+        <translation>Automatically start BECN after logging in to the system.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Start PIVX on system login</translation>
+        <source>&amp;Start BECN on system login</source>
+        <translation>&amp;Start BECN on system login</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1888,8 +1888,8 @@ Please be patient after clicking import.</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting BECN.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting BECN.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1902,36 +1902,36 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Enable automatic minting of PIV units to zPIV</translation>
+        <source>Enable automatic minting of BECN units to zBECN</source>
+        <translation>Enable automatic minting of BECN units to zBECN</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Enable zPIV Automint</translation>
+        <source>Enable zBECN Automint</source>
+        <translation>Enable zBECN Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming BECN which get automatically converted to zBECN via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming BECN which get automatically converted to zBECN via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentage of autominted zPIV</translation>
+        <source>Percentage of autominted zBECN</source>
+        <translation>Percentage of autominted zBECN</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough BECN for this denomination is available</source>
+        <translation>Wait with automatic conversion to Zerocoin until enough BECN for this denomination is available</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferred Automint zPIV Denomination</translation>
+        <source>Preferred Automint zBECN Denomination</source>
+        <translation>Preferred Automint zBECN Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake split threshold:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Connect to the PIVX network through a SOCKS5 proxy.</translation>
+        <source>Connect to the BECN network through a SOCKS5 proxy.</source>
+        <translation>Connect to the BECN network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2089,8 +2089,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Total Balance, including all unavailable coins.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>PIV Balance</translation>
+        <source>BECN Balance</source>
+        <translation>BECN Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2113,18 +2113,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Current locked balance in watch-only addresses</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Your current PIVX balance, unconfirmed and immature transactions included</translation>
+        <source>Your current BECN balance, unconfirmed and immature transactions included</source>
+        <translation>Your current BECN balance, unconfirmed and immature transactions included</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>zPIV Balance</translation>
+        <source>zBECN Balance</source>
+        <translation>zBECN Balance</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zBECN are spendable.</source>
         <translation>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</translation>
+These zBECN are spendable.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2133,8 +2133,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the PIVX network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BECN network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the BECN network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2177,8 +2177,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Spendable:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</translation>
+        <source>Locked BECN or Masternode collaterals. These are excluded from zBECN minting.</source>
+        <translation>Locked BECN or Masternode collaterals. These are excluded from zBECN minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2189,8 +2189,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Unconfirmed:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Your current zPIV balance, unconfirmed and immature zPIV included.</translation>
+        <source>Your current zBECN balance, unconfirmed and immature zBECN included.</source>
+        <translation>Your current zBECN balance, unconfirmed and immature zBECN included.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2201,10 +2201,10 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>out of sync</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zBECN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Current percentage of zPIV.
+        <translation>Current percentage of zBECN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </translation>
     </message>
@@ -2250,8 +2250,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Cannot start pivx: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid BECN address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2336,8 +2336,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Zerocoin Actions:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the PIVX network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BECN network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the BECN network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2348,8 +2348,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zBECN</source>
+        <translation>zBECN</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2376,12 +2376,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>zPIV Control</translation>
+        <source>zBECN Control</source>
+        <translation>zBECN Control</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>zPIV Selected:</translation>
+        <source>zBECN Selected:</source>
+        <translation>zBECN Selected:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2396,32 +2396,32 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Spend Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>Available (mature and spendable) zPIV for spending</translation>
+        <source>Available (mature and spendable) zBECN for spending</source>
+        <translation>Available (mature and spendable) zBECN for spending</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Available Balance:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zBECN for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Available (mature and spendable) zPIV for spending
+zBECN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Available (mature and spendable) zBECN for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
+zBECN are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zBECN</source>
+        <translation>0 zBECN</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>The PIVX address to send the payment to. Creates local payment to yourself when empty.</translation>
+        <source>The BECN address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>The BECN address to send the payment to. Creates local payment to yourself when empty.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2472,8 +2472,8 @@ zPIV are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Total Balance including unconfirmed and immature zPIV</translation>
+        <source>Total Balance including unconfirmed and immature zBECN</source>
+        <translation>Total Balance including unconfirmed and immature zBECN</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2494,24 +2494,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
 
 </source>
-        <translation>Show the current status of automatic zPIV minting.
+        <translation>Show the current status of automatic zBECN minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zBECN
 
 </translation>
     </message>
@@ -2560,8 +2560,8 @@ To change the percentage (no restart required):
         <translation>0 x</translation>
     </message>
     <message>
-        <source>Show zPIV denominations list</source>
-        <translation>Show zPIV denominations list</translation>
+        <source>Show zBECN denominations list</source>
+        <translation>Show zBECN denominations list</translation>
     </message>
     <message>
         <source>Show Denominations</source>
@@ -2698,12 +2698,12 @@ Please be patient...</source>
 Please be patient...</translation>
     </message>
     <message>
-        <source>zPIV Spend #: </source>
-        <translation>zPIV Spend #: </translation>
+        <source>zBECN Spend #: </source>
+        <translation>zBECN Spend #: </translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>zPIV Mint</translation>
+        <source>zBECN Mint</source>
+        <translation>zBECN Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2718,12 +2718,12 @@ Please be patient...</translation>
         <translation> Configured target percentage: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
-        <translation>zPIV is currently disabled due to maintenance.</translation>
+        <source>zBECN is currently disabled due to maintenance.</source>
+        <translation>zBECN is currently disabled due to maintenance.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV is currently undergoing maintenance.</translation>
+        <source>zBECN is currently undergoing maintenance.</source>
+        <translation>zBECN is currently undergoing maintenance.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2890,8 +2890,8 @@ Please be patient...</translation>
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
-        <translation>Enter a PIVX address (e.g. %1)</translation>
+        <source>Enter a BECN address (e.g. %1)</source>
+        <translation>Enter a BECN address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2934,8 +2934,8 @@ Please be patient...</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     </context>
 <context>
@@ -3032,8 +3032,8 @@ Please be patient...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the BECN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the BECN debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3168,8 +3168,8 @@ Please be patient...</translation>
         <translation>Custom Backup Path:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Custom zPIV Backup Path:</translation>
+        <source>Custom zBECN Backup Path:</source>
+        <translation>Custom zBECN Backup Path:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3248,8 +3248,8 @@ Please be patient...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welcome to the PIVX RPC console.</translation>
+        <source>Welcome to the BECN RPC console.</source>
+        <translation>Welcome to the BECN RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3391,16 +3391,16 @@ Please be patient...</translation>
         <translation>A&amp;mount:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BECN network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BECN network.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>RECEIVE</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BECN network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the BECN network.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3636,12 +3636,12 @@ Please be patient...</translation>
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 BECN</source>
+        <translation>0 BECN</translation>
     </message>
     <message>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 PIV applies</source>
-        <translation>SwiftX technology allows for near instant transactions - A flat fee of 0.01 PIV applies</translation>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 BECN applies</source>
+        <translation>SwiftX technology allows for near instant transactions - A flat fee of 0.01 BECN applies</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3696,16 +3696,16 @@ Please be patient...</translation>
         <translation>Coins automatically selected</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uBECNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBECNs in fee,&lt;br /&gt;while "at least" pays 1000 uBECNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uBECNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBECNs in fee,&lt;br /&gt;while "at least" pays 1000 uBECNs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uBECNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBECNs in fee,&lt;br /&gt;while "total at least" pays 1000 uBECNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uBECNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBECNs in fee,&lt;br /&gt;while "total at least" pays 1000 uBECNs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BECN transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for BECN transactions than the network can process.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3752,8 +3752,8 @@ Please be patient...</translation>
         <translation>Add &amp;Recipient</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>Anonymised PIV</translation>
+        <source>Anonymized BECN</source>
+        <translation>Anonymised BECN</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3800,8 +3800,8 @@ Please be patient...</translation>
         <translation>The split block tool does not work with multiple addresses. Try again.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
-        <translation>Warning: Invalid PIVX address</translation>
+        <source>Warning: Invalid BECN address</source>
+        <translation>Warning: Invalid BECN address</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3903,8 +3903,8 @@ Please be patient...</translation>
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
-        <translation>The PIVX address to send the payment to</translation>
+        <source>The BECN address to send the payment to</source>
+        <translation>The BECN address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3943,8 +3943,8 @@ Please be patient...</translation>
         <translation>Message:</translation>
     </message>
     <message>
-        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
-        <translation>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</translation>
+        <source>A message that was attached to the BECN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BECN network.</source>
+        <translation>A message that was attached to the BECN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BECN network.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3970,8 +3970,8 @@ Please be patient...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core is shutting down...</translation>
+        <source>Beacon is shutting down...</source>
+        <translation>Beacon is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3993,8 +3993,8 @@ Please be patient...</translation>
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>The PIVX address to sign the message with</translation>
+        <source>The BECN address to sign the message with</source>
+        <translation>The BECN address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4025,16 +4025,16 @@ Please be patient...</translation>
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Sign the message to prove you own this PIVX address</translation>
+        <source>Sign the message to prove you own this BECN address</source>
+        <translation>Sign the message to prove you own this BECN address</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>The PIVX address the message was signed with</translation>
+        <source>The BECN address the message was signed with</source>
+        <translation>The BECN address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Verify the message to ensure it was signed with the specified PIVX address</translation>
+        <source>Verify the message to ensure it was signed with the specified BECN address</source>
+        <translation>Verify the message to ensure it was signed with the specified BECN address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4120,8 +4120,8 @@ Please be patient...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>Beacon</source>
+        <translation>Beacon</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4400,12 +4400,12 @@ Please be patient...</translation>
         <translation>Received via Obfuscation</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>BECN Stake</source>
+        <translation>BECN Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zBECN Stake</source>
+        <translation>zBECN Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4424,32 +4424,32 @@ Please be patient...</translation>
         <translation>Obfuscation Create Denominations</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Converted PIV to zPIV</translation>
+        <source>Converted BECN to zBECN</source>
+        <translation>Converted BECN to zBECN</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Spent zPIV</translation>
+        <source>Spent zBECN</source>
+        <translation>Spent zBECN</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Received PIV from zPIV</translation>
+        <source>Received BECN from zBECN</source>
+        <translation>Received BECN from zBECN</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Minted Change as zPIV from zPIV Spend</translation>
+        <source>Minted Change as zBECN from zBECN Spend</source>
+        <translation>Minted Change as zBECN from zBECN Spend</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Converted zPIV to PIV</translation>
+        <source>Converted zBECN to BECN</source>
+        <translation>Converted zBECN to BECN</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Transaction)</source>
-        <translation>Anonymous (zPIV Transaction)</translation>
+        <source>Anonymous (zBECN Transaction)</source>
+        <translation>Anonymous (zBECN Transaction)</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Stake)</source>
-        <translation>Anonymous (zPIV Stake)</translation>
+        <source>Anonymous (zBECN Stake)</source>
+        <translation>Anonymous (zBECN Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4663,12 +4663,12 @@ Please be patient...</translation>
         <translation>Exporting Successful</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Received PIV from zPIV</translation>
+        <source>Received BECN from zBECN</source>
+        <translation>Received BECN from zBECN</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPIV</source>
-        <translation>Zerocoin Spend, Change in zPIV</translation>
+        <source>Zerocoin Spend, Change in zBECN</source>
+        <translation>Zerocoin Spend, Change in zBECN</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4704,8 +4704,8 @@ Please be patient...</translation>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BECN.</source>
+        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BECN.</translation>
     </message>
 </context>
 <context>
@@ -4738,8 +4738,8 @@ Please be patient...</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Select zPIV to Spend</translation>
+        <source>Select zBECN to Spend</source>
+        <translation>Select zBECN to Spend</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4750,8 +4750,8 @@ Please be patient...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zBECN</source>
+        <translation>zBECN</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4785,8 +4785,8 @@ Please be patient...</translation>
         <translation>Calculated accumulator checkpoint is not what is recorded by block index</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Beacon is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Beacon is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4813,16 +4813,16 @@ Please be patient...</translation>
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zBECN minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zBECN minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for BECN inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for BECN inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zBECN inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zBECN inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4857,12 +4857,12 @@ Please be patient...</translation>
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in BECN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in BECN/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in BECN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in BECN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4961,20 +4961,20 @@ Please be patient...</translation>
         <translation>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. PIVX Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Beacon is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Beacon is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 BECN.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 BECN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4989,8 +4989,8 @@ Please be patient...</translation>
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Beacon will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Beacon will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5205,8 +5205,8 @@ Please be patient...</translation>
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of PIVX Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Beacon</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Beacon</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5261,8 +5261,8 @@ Please be patient...</translation>
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in PIV/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in BECN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in BECN/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5301,8 +5301,8 @@ Please be patient...</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Initialisation sanity check failed. PIVX Core is shutting down.</translation>
+        <source>Initialization sanity check failed. Beacon is shutting down.</source>
+        <translation>Initialisation sanity check failed. Beacon is shutting down.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5365,8 +5365,8 @@ Please be patient...</translation>
         <translation>Percentage of automatically minted Zerocoin  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Reindex the PIV and zPIV money supply statistics</translation>
+        <source>Reindex the BECN and zBECN money supply statistics</source>
+        <translation>Reindex the BECN and zBECN money supply statistics</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5405,8 +5405,8 @@ Please be patient...</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all BECN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disable all BECN specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5441,8 +5441,8 @@ Please be patient...</translation>
         <translation>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zBECN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zBECN backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5853,8 +5853,8 @@ Please be patient...</translation>
         <translation>Synchronising sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Syncing zPIV wallet...</translation>
+        <source>Syncing zBECN wallet...</source>
+        <translation>Syncing zBECN wallet...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5965,8 +5965,8 @@ Please be patient...</translation>
         <translation>Username for JSON-RPC connections</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Value is below the smallest available denomination (= 1) of zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zBECN</source>
+        <translation>Value is below the smallest available denomination (= 1) of zBECN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5981,8 +5981,8 @@ Please be patient...</translation>
         <translation>Wallet %s resides outside data directory %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart PIVX Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart Beacon to complete</source>
+        <translation>Wallet needed to be rewritten: restart Beacon to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

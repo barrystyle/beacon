@@ -34,7 +34,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::PIV)
+    TxViewDelegate() : QAbstractItemDelegate(), unit(BitcoinUnits::BECN)
     {
     }
 
@@ -146,7 +146,7 @@ OverviewPage::~OverviewPage()
     delete ui;
 }
 
-void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sPIVPercentage, QString& szPIVPercentage)
+void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBalance, QString& sBECNPercentage, QString& szBECNPercentage)
 {
     int nPrecision = 2;
     double dzPercentage = 0.0;
@@ -165,8 +165,8 @@ void OverviewPage::getPercentage(CAmount nUnlockedBalance, CAmount nZerocoinBala
 
     double dPercentage = 100.0 - dzPercentage;
 
-    szPIVPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
-    sPIVPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
+    szBECNPercentage = "(" + QLocale(QLocale::system()).toString(dzPercentage, 'f', nPrecision) + " %)";
+    sBECNPercentage = "(" + QLocale(QLocale::system()).toString(dPercentage, 'f', nPrecision) + " %)";
 
 }
 
@@ -191,16 +191,16 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
         nWatchOnlyLockedBalance = pwalletMain->GetLockedWatchOnlyBalance();
     }
 
-    // PIV Balance
+    // BECN Balance
     CAmount nTotalBalance = balance + unconfirmedBalance;
     CAmount pivAvailableBalance = balance - immatureBalance - nLockedBalance;
     CAmount nUnlockedBalance = nTotalBalance - nLockedBalance;
 
-    // PIV Watch-Only Balance
+    // BECN Watch-Only Balance
     CAmount nTotalWatchBalance = watchOnlyBalance + watchUnconfBalance;
     CAmount nAvailableWatchBalance = watchOnlyBalance - watchImmatureBalance - nWatchOnlyLockedBalance;
 
-    // zPIV Balance
+    // zBECN Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Percentages
@@ -211,7 +211,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     CAmount availableTotalBalance = pivAvailableBalance + matureZerocoinBalance;
     CAmount sumTotalBalance = nTotalBalance + zerocoinBalance;
 
-    // PIV labels
+    // BECN labels
     ui->labelBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, pivAvailableBalance, false, BitcoinUnits::separatorAlways));
     ui->labelUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelImmature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, immatureBalance, false, BitcoinUnits::separatorAlways));
@@ -225,7 +225,7 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelWatchLocked->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nWatchOnlyLockedBalance, false, BitcoinUnits::separatorAlways));
     ui->labelWatchTotal->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, nTotalWatchBalance, false, BitcoinUnits::separatorAlways));
 
-    // zPIV labels
+    // zBECN labels
     ui->labelzBalance->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, zerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceUnconfirmed->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, unconfirmedZerocoinBalance, false, BitcoinUnits::separatorAlways));
     ui->labelzBalanceMature->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, matureZerocoinBalance, false, BitcoinUnits::separatorAlways));
@@ -236,11 +236,11 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     ui->labelTotalz->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, sumTotalBalance, false, BitcoinUnits::separatorAlways));
 
     // Percentage labels
-    ui->labelPIVPercent->setText(sPercentage);
-    ui->labelzPIVPercent->setText(szPercentage);
+    ui->labelBECNPercent->setText(sPercentage);
+    ui->labelzBECNPercent->setText(szPercentage);
 
     // Adjust bubble-help according to AutoMint settings
-    QString automintHelp = tr("Current percentage of zPIV.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
+    QString automintHelp = tr("Current percentage of zBECN.\nIf AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).\n");
     bool fEnableZeromint = GetBoolArg("-enablezeromint", true);
     int nZeromintPercentage = GetArg("-zeromintpercentage", 10);
     if (fEnableZeromint) {
@@ -261,49 +261,49 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
 
     bool showWatchOnly = nTotalWatchBalance != 0;
 
-    // PIV Available
-    bool showPIVAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
-    bool showWatchOnlyPIVAvailable = showPIVAvailable || nAvailableWatchBalance != nTotalWatchBalance;
-    ui->labelBalanceText->setVisible(showPIVAvailable || showWatchOnlyPIVAvailable);
-    ui->labelBalance->setVisible(showPIVAvailable || showWatchOnlyPIVAvailable);
-    ui->labelWatchAvailable->setVisible(showWatchOnlyPIVAvailable && showWatchOnly);
+    // BECN Available
+    bool showBECNAvailable = settingShowAllBalances || pivAvailableBalance != nTotalBalance;
+    bool showWatchOnlyBECNAvailable = showBECNAvailable || nAvailableWatchBalance != nTotalWatchBalance;
+    ui->labelBalanceText->setVisible(showBECNAvailable || showWatchOnlyBECNAvailable);
+    ui->labelBalance->setVisible(showBECNAvailable || showWatchOnlyBECNAvailable);
+    ui->labelWatchAvailable->setVisible(showWatchOnlyBECNAvailable && showWatchOnly);
 
-    // PIV Pending
-    bool showPIVPending = settingShowAllBalances || unconfirmedBalance != 0;
-    bool showWatchOnlyPIVPending = showPIVPending || watchUnconfBalance != 0;
-    ui->labelPendingText->setVisible(showPIVPending || showWatchOnlyPIVPending);
-    ui->labelUnconfirmed->setVisible(showPIVPending || showWatchOnlyPIVPending);
-    ui->labelWatchPending->setVisible(showWatchOnlyPIVPending && showWatchOnly);
+    // BECN Pending
+    bool showBECNPending = settingShowAllBalances || unconfirmedBalance != 0;
+    bool showWatchOnlyBECNPending = showBECNPending || watchUnconfBalance != 0;
+    ui->labelPendingText->setVisible(showBECNPending || showWatchOnlyBECNPending);
+    ui->labelUnconfirmed->setVisible(showBECNPending || showWatchOnlyBECNPending);
+    ui->labelWatchPending->setVisible(showWatchOnlyBECNPending && showWatchOnly);
 
-    // PIV Immature
-    bool showPIVImmature = settingShowAllBalances || immatureBalance != 0;
-    bool showWatchOnlyImmature = showPIVImmature || watchImmatureBalance != 0;
-    ui->labelImmatureText->setVisible(showPIVImmature || showWatchOnlyImmature);
-    ui->labelImmature->setVisible(showPIVImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
+    // BECN Immature
+    bool showBECNImmature = settingShowAllBalances || immatureBalance != 0;
+    bool showWatchOnlyImmature = showBECNImmature || watchImmatureBalance != 0;
+    ui->labelImmatureText->setVisible(showBECNImmature || showWatchOnlyImmature);
+    ui->labelImmature->setVisible(showBECNImmature || showWatchOnlyImmature); // for symmetry reasons also show immature label when the watch-only one is shown
     ui->labelWatchImmature->setVisible(showWatchOnlyImmature && showWatchOnly); // show watch-only immature balance
 
-    // PIV Locked
-    bool showPIVLocked = settingShowAllBalances || nLockedBalance != 0;
-    bool showWatchOnlyPIVLocked = showPIVLocked || nWatchOnlyLockedBalance != 0;
-    ui->labelLockedBalanceText->setVisible(showPIVLocked || showWatchOnlyPIVLocked);
-    ui->labelLockedBalance->setVisible(showPIVLocked || showWatchOnlyPIVLocked);
-    ui->labelWatchLocked->setVisible(showWatchOnlyPIVLocked && showWatchOnly);
+    // BECN Locked
+    bool showBECNLocked = settingShowAllBalances || nLockedBalance != 0;
+    bool showWatchOnlyBECNLocked = showBECNLocked || nWatchOnlyLockedBalance != 0;
+    ui->labelLockedBalanceText->setVisible(showBECNLocked || showWatchOnlyBECNLocked);
+    ui->labelLockedBalance->setVisible(showBECNLocked || showWatchOnlyBECNLocked);
+    ui->labelWatchLocked->setVisible(showWatchOnlyBECNLocked && showWatchOnly);
 
-    // zPIV
-    bool showzPIVAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
-    bool showzPIVUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
-    bool showzPIVImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
-    ui->labelzBalanceMature->setVisible(showzPIVAvailable);
-    ui->labelzBalanceMatureText->setVisible(showzPIVAvailable);
-    ui->labelzBalanceUnconfirmed->setVisible(showzPIVUnconfirmed);
-    ui->labelzBalanceUnconfirmedText->setVisible(showzPIVUnconfirmed);
-    ui->labelzBalanceImmature->setVisible(showzPIVImmature);
-    ui->labelzBalanceImmatureText->setVisible(showzPIVImmature);
+    // zBECN
+    bool showzBECNAvailable = settingShowAllBalances || zerocoinBalance != matureZerocoinBalance;
+    bool showzBECNUnconfirmed = settingShowAllBalances || unconfirmedZerocoinBalance != 0;
+    bool showzBECNImmature = settingShowAllBalances || immatureZerocoinBalance != 0;
+    ui->labelzBalanceMature->setVisible(showzBECNAvailable);
+    ui->labelzBalanceMatureText->setVisible(showzBECNAvailable);
+    ui->labelzBalanceUnconfirmed->setVisible(showzBECNUnconfirmed);
+    ui->labelzBalanceUnconfirmedText->setVisible(showzBECNUnconfirmed);
+    ui->labelzBalanceImmature->setVisible(showzBECNImmature);
+    ui->labelzBalanceImmatureText->setVisible(showzBECNImmature);
 
     // Percent split
     bool showPercentages = ! (zerocoinBalance == 0 && nTotalBalance == 0);
-    ui->labelPIVPercent->setVisible(showPercentages);
-    ui->labelzPIVPercent->setVisible(showPercentages);
+    ui->labelBECNPercent->setVisible(showPercentages);
+    ui->labelzBECNPercent->setVisible(showPercentages);
 
     static int cachedTxLocks = 0;
 
@@ -375,7 +375,7 @@ void OverviewPage::setWalletModel(WalletModel* model)
         connect(model, SIGNAL(notifyWatchonlyChanged(bool)), this, SLOT(updateWatchOnlyLabels(bool)));
     }
 
-    // update the display unit, to not use the default ("PIV")
+    // update the display unit, to not use the default ("BECN")
     updateDisplayUnit();
 
     // Hide orphans
