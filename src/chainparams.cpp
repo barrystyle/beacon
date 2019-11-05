@@ -122,7 +122,7 @@ public:
         pchMessageStart[1] = 0xc4;
         pchMessageStart[2] = 0xfd;
         pchMessageStart[3] = 0xe9;
-        vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
+        vAlertPubKey = ParseHex("023aeba7d6ff62b7761ef0185f113d159391e71f6f51c880214c8a88c5dfb1c97e");
         nDefaultPort = 43421;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
@@ -131,8 +131,8 @@ public:
         nRejectBlockOutdatedMajority = 10260; // 95%
         nToCheckBlockUpgradeMajority = 10800; // Approximate expected amount of blocks in 7 days (1440*7.5)
         nMinerThreads = 0;
-        nTargetSpacing = 1 * 60;
-        nMaturity = 25;
+        nTargetSpacing = 1 * 70;
+        nMaturity = 16;
         nStakeMinDepth = nMaturity; // input must be n confirms deep to stake
         nFutureTimeDriftPoW = 7200;
         nFutureTimeDriftPoS = 180;
@@ -168,13 +168,13 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          *
-         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
-         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
-         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
-         *   vMerkleTree: e0028e
+         *CBlock(hash=0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217, nTime=1572958800, nBits=1e0ffff0, nNonce=232896, vtx=1)
+         *  CTransaction(hash=06bdcc7da2, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+         *  CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d010424626561636f6e63727970746f202d20646f6e652072696768742031353732393639363030)
+         *  CTxOut(nValue=0.00000000, scriptPubKey=04c10e83b2703ccf322f7dbd62dd58)
+         *vMerkleTree:  06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217
          */
-        const char* pszTimestamp = "beaconcrypto - done right 04112019";
+        const char* pszTimestamp = "beaconcrypto - done right 1572969600";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -185,7 +185,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1572876000;  // 11/04/2019 @ 2:00pm (UTC)
+        genesis.nTime = 1572958800;  // 11/05/2019 @ 1:00pm (UTC)
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
         genesis.nNonce = 0;
 
@@ -193,11 +193,11 @@ public:
           genesis.nNonce++;
           if (genesis.nNonce % 128 == 0) printf("\rnonce %08x", genesis.nNonce);
         }
-        LogPrintf("genesis is %s\n", genesis.ToString().c_str());
+        printf("genesis is %s\n", genesis.ToString().c_str());
 
         hashGenesisBlock = genesis.GetHash();
-        // assert(hashGenesisBlock == uint256("0x0000000000000000000000000000000000000000000000000000000000000000"));
-        // assert(genesis.hashMerkleRoot == uint256("0x0000000000000000000000000000000000000000000000000000000000000000"));
+        assert(hashGenesisBlock == uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
+        assert(genesis.hashMerkleRoot == uint256("0x06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217"));
 
         // vSeeds.push_back(CDNSSeedData("", ""));
 
@@ -222,9 +222,9 @@ public:
 
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200;
-        strSporkKey = "";    // TODO
+        strSporkKey = "02f43efa160150cd397d637dac0b15191bdd402c0ca9ec143e1a45313a562c2ca9";
         strSporkKeyOld = "";
-        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
+        strObfuscationPoolDummyAddress = "bNFGLkVdVtTjz5RwgXwzxhC5MQxHbEo9yq";
         nStartMasternodePayments = genesis.nTime;
 
         /** Zerocoin */
@@ -312,9 +312,6 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx-testnet.seed.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx-testnet.seed2.fuzzbawls.pw"));
-        vSeeds.push_back(CDNSSeedData("warrows.dev", "testnet.dnsseed.pivx.warrows.dev"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet beacon addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet beacon script addresses start with '8' or '9'
