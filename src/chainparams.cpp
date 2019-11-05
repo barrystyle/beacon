@@ -53,19 +53,19 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0000000000000000000000000000000000000000000000000000000000000000"));
+    (     0, uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1556924938, // * UNIX timestamp of last checkpoint block
-    4271692,    // * total number of transactions between genesis and last checkpoint
+    1572958800, // * UNIX timestamp of last checkpoint block
+    0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
-    (     0, uint256("0000000000000000000000000000000000000000000000000000000000000000"));
+    (     0, uint256("0x001"));
 
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
@@ -123,7 +123,7 @@ public:
         pchMessageStart[2] = 0xfd;
         pchMessageStart[3] = 0xe9;
         vAlertPubKey = ParseHex("023aeba7d6ff62b7761ef0185f113d159391e71f6f51c880214c8a88c5dfb1c97e");
-        nDefaultPort = 43421;
+        nDefaultPort = 11115;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -132,7 +132,7 @@ public:
         nToCheckBlockUpgradeMajority = 10800; // Approximate expected amount of blocks in 7 days (1440*7.5)
         nMinerThreads = 0;
         nTargetSpacing = 1 * 70;
-        nMaturity = 16;
+        nMaturity = 15;
         nStakeMinDepth = nMaturity; // input must be n confirms deep to stake
         nFutureTimeDriftPoW = 7200;
         nFutureTimeDriftPoS = 180;
@@ -189,17 +189,11 @@ public:
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
         genesis.nNonce = 0;
 
-        while (genesis.GetHash() > uint256("0x00000ffff0000000000000000000000000000000000000000000000000000000")) {
-          genesis.nNonce++;
-          if (genesis.nNonce % 128 == 0) printf("\rnonce %08x", genesis.nNonce);
-        }
-        printf("genesis is %s\n", genesis.ToString().c_str());
-
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
         assert(genesis.hashMerkleRoot == uint256("0x06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217"));
 
-        // vSeeds.push_back(CDNSSeedData("", ""));
+        vSeeds.push_back(CDNSSeedData("exp.monitorit4.me", "beacon.exp.monitorit4.me"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // b
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25); // B
