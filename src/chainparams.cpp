@@ -187,7 +187,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1572958800;  // 11/05/2019 @ 1:00pm (UTC)
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
-        genesis.nNonce = 0;
+        genesis.nNonce = 232896;
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
