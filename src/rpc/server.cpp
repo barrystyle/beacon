@@ -265,11 +265,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop BECN server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "BECN server stopping";
 }
 
 
@@ -362,35 +362,35 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true,  true,  false  },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true,  true,  false  },
 
-        /* PIVX features */
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Beacon features */
+        {"beacon", "listmasternodes", &listmasternodes, true, true, false},
+        {"beacon", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"beacon", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"beacon", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"beacon", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"beacon", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"beacon", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"beacon", "masternodedebug", &masternodedebug, true, true, false},
+        {"beacon", "startmasternode", &startmasternode, true, true, false},
+        {"beacon", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"beacon", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"beacon", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"beacon", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"beacon", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"beacon", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"beacon", "preparebudget", &preparebudget, true, true, false},
+        {"beacon", "submitbudget", &submitbudget, true, true, false},
+        {"beacon", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"beacon", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"beacon", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"beacon", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"beacon", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"beacon", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"beacon", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"beacon", "checkbudgets", &checkbudgets, true, true, false},
+        {"beacon", "mnsync", &mnsync, true, true, false},
+        {"beacon", "spork", &spork, true, true, false},
+        {"beacon", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */

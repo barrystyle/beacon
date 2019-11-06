@@ -3,6 +3,7 @@
 *.sublime-workspace
 todo.txt
 reset-files.bash
+replacer.sh
 
 *.tar.gz
 
