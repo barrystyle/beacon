@@ -71,10 +71,10 @@ static bool AppInitRPC(int argc, char* argv[])
     //
     ParseParameters(argc, argv);
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("PIVX Core RPC client version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("BECN Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  beacon-cli [options] <command> [params]  " + _("Send command to PIVX Core") + "\n" +
+                        "  beacon-cli [options] <command> [params]  " + _("Send command to BECN Core") + "\n" +
                         "  beacon-cli [options] help                " + _("List commands") + "\n" +
                         "  beacon-cli [options] help <command>      " + _("Get help for a command") + "\n";
 

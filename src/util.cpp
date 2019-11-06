@@ -219,7 +219,7 @@ bool LogAcceptCategory(const char* category)
             const std::vector<std::string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new std::set<std::string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "beacon" is a composite category enabling all PIVX-related debug output
+            // "beacon" is a composite category enabling all BECN-related debug output
             if (ptrCategory->count(std::string("beacon"))) {
                 ptrCategory->insert(std::string("obfuscation"));
                 ptrCategory->insert(std::string("swiftx"));

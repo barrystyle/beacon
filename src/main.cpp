@@ -50,7 +50,7 @@
 
 
 #if defined(NDEBUG)
-#error "PIVX cannot be compiled without assertions."
+#error "BECN cannot be compiled without assertions."
 #endif
 
 /**
