@@ -53,11 +53,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x001"));
+    (     0, uint256("0x00000bc462fa6bd40aedcc322762784de988089c5b0ed9f60bed0ab4230e5e36"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1572958800, // * UNIX timestamp of last checkpoint block
+    1573110224, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -168,11 +168,12 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          *
-         *CBlock(hash=0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217, nTime=1572958800, nBits=1e0ffff0, nNonce=232896, vtx=1)
-         *  CTransaction(hash=06bdcc7da2, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *  CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d010424626561636f6e63727970746f202d20646f6e652072696768742031353732393639363030)
-         *  CTxOut(nValue=0.00000000, scriptPubKey=04c10e83b2703ccf322f7dbd62dd58)
-         *vMerkleTree:  06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217
+         *  CBlock(hash=00000bc462fa6bd40aedcc322762784de988089c5b0ed9f60bed0ab4230e5e36, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=8ed7deab5aa103fa843fe679b48d6d3f22099ee2060dde73a5de9615b5bb01b3, nTime=1573110224, nBits=1e0ffff0, nNonce=781587, vtx=1)
+         *    CTransaction(hash=8ed7deab5a, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+         *      CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d010419626561636f6e63727970746f202d20646f6e65207269676874)
+         *      CTxOut(nValue=0.00000000, scriptPubKey=04c10e83b2703ccf322f7dbd62dd58)
+         *  
+         *    vMerkleTree:  8ed7deab5aa103fa843fe679b48d6d3f22099ee2060dde73a5de9615b5bb01b3
          */
         const char* pszTimestamp = "beaconcrypto - done right";
         CMutableTransaction txNew;
@@ -187,16 +188,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1573110224;  // 11/05/2019 @ 1:00pm (UTC)
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
-        genesis.nNonce = 232896;
+        genesis.nNonce = 781587;
 
         hashGenesisBlock = genesis.GetHash();
-        while (genesis.GetHash() > uint256("0x00000ffff0000000000000000000000000000000000000000000000000000000")) {
-          genesis.nNonce++;
-          if (genesis.nNonce % 128 == 0) printf("\rnonce %08x", genesis.nNonce);
-        }
-        printf("genesis is %s\n", genesis.ToString().c_str());
-        //assert(hashGenesisBlock == uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
-        //assert(genesis.hashMerkleRoot == uint256("0x06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217"));
+        assert(hashGenesisBlock == uint256("0x00000bc462fa6bd40aedcc322762784de988089c5b0ed9f60bed0ab4230e5e36"));
+        assert(genesis.hashMerkleRoot == uint256("0x8ed7deab5aa103fa843fe679b48d6d3f22099ee2060dde73a5de9615b5bb01b3"));
 
         vSeeds.push_back(CDNSSeedData("exp.monitorit4.me", "beacon.exp.monitorit4.me"));
 
