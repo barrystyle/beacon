@@ -53,7 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
+    (     0, uint256("0x001"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -174,7 +174,7 @@ public:
          *  CTxOut(nValue=0.00000000, scriptPubKey=04c10e83b2703ccf322f7dbd62dd58)
          *vMerkleTree:  06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217
          */
-        const char* pszTimestamp = "beaconcrypto - done right 1572969600";
+        const char* pszTimestamp = "beaconcrypto - done right";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -185,13 +185,18 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1572958800;  // 11/05/2019 @ 1:00pm (UTC)
+        genesis.nTime = 1573110224;  // 11/05/2019 @ 1:00pm (UTC)
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
         genesis.nNonce = 232896;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
-        assert(genesis.hashMerkleRoot == uint256("0x06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217"));
+        while (genesis.GetHash() > uint256("0x00000ffff0000000000000000000000000000000000000000000000000000000")) {
+          genesis.nNonce++;
+          if (genesis.nNonce % 128 == 0) printf("\rnonce %08x", genesis.nNonce);
+        }
+        printf("genesis is %s\n", genesis.ToString().c_str());
+        //assert(hashGenesisBlock == uint256("0x0000094716ad6dbe23b0763ee1fea451fff749e7776794d90d1e32fae9b86ce6"));
+        //assert(genesis.hashMerkleRoot == uint256("0x06bdcc7da238018ae7d1c81a5e17c22398415415d3c6e7ac2f8149abcb039217"));
 
         vSeeds.push_back(CDNSSeedData("exp.monitorit4.me", "beacon.exp.monitorit4.me"));
 
