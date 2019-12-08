@@ -6,6 +6,7 @@
 #include "masternodeman.h"
 #include "activemasternode.h"
 #include "addrman.h"
+#include "collateral.h"
 #include "masternode.h"
 #include "obfuscation.h"
 #include "spork.h"
@@ -985,7 +986,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(9999.99 * COIN, obfuScationPool.collateralPubKey);
+        CTxOut vout = CTxOut(MixCollateralRequired(), obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 

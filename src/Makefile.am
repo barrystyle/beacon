@@ -94,6 +94,7 @@ BITCOIN_CORE_H = \
   clientversion.h \
   coincontrol.h \
   coins.h \
+  collateral.h \
   compat.h \
   compat/byteswap.h \
   compat/endian.h \
@@ -255,6 +256,7 @@ libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_wallet_a_SOURCES = \
   activemasternode.cpp \
   bip38.cpp \
+  collateral.cpp \
   denomination_functions.cpp \
   obfuscation.cpp \
   obfuscation-relay.cpp \

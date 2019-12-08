@@ -5,6 +5,7 @@
 
 #include "obfuscation.h"
 #include "coincontrol.h"
+#include "collateral.h"
 #include "init.h"
 #include "main.h"
 #include "masternodeman.h"
@@ -533,7 +534,7 @@ bool CObfuScationSigner::IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey)
     uint256 hash;
     if (GetTransaction(vin.prevout.hash, txVin, hash, true)) {
         for (CTxOut out : txVin.vout) {
-            if (out.nValue == 10000 * COIN) {
+            if (out.nValue == CollateralRequired()) {
                 if (out.scriptPubKey == payee2) return true;
             }
         }
