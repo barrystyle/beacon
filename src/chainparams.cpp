@@ -53,11 +53,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (     0, uint256("0x00000bc462fa6bd40aedcc322762784de988089c5b0ed9f60bed0ab4230e5e36"));
+    (     0, uint256("0x00000e34499c147af371b3ceb6bf565aa326fbe585825b0f682dda3ab1f9ac92"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1573110224, // * UNIX timestamp of last checkpoint block
+    1573572825, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -127,9 +127,9 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 20;
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 8100; // 75%
-        nRejectBlockOutdatedMajority = 10260; // 95%
-        nToCheckBlockUpgradeMajority = 10800; // Approximate expected amount of blocks in 7 days (1440*7.5)
+        nEnforceBlockUpgradeMajority = 6941; // 75%
+        nRejectBlockOutdatedMajority = 8792; // 95%
+        nToCheckBlockUpgradeMajority = 9255; // Approximate expected amount of blocks in 7 days (1440*7.5)
         nMinerThreads = 0;
         nTargetSpacing = 1 * 70;
         nMaturity = 15;
@@ -172,7 +172,7 @@ public:
          *    CTransaction(hash=8ed7deab5a, ver=1, vin.size=1, vout.size=1, nLockTime=0)
          *      CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d010419626561636f6e63727970746f202d20646f6e65207269676874)
          *      CTxOut(nValue=0.00000000, scriptPubKey=04c10e83b2703ccf322f7dbd62dd58)
-         *  
+         *
          *    vMerkleTree:  8ed7deab5aa103fa843fe679b48d6d3f22099ee2060dde73a5de9615b5bb01b3
          */
         const char* pszTimestamp = "beaconcrypto - done right";
@@ -186,15 +186,26 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1573110224;  // 11/05/2019 @ 1:00pm (UTC)
+        genesis.nTime = 1573572825;  // 11/12/2019 @ 3:33pm (UTC)
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
-        genesis.nNonce = 781587;
+        genesis.nNonce = 488333;
+
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000bc462fa6bd40aedcc322762784de988089c5b0ed9f60bed0ab4230e5e36"));
+        assert(hashGenesisBlock == uint256("0x00000e34499c147af371b3ceb6bf565aa326fbe585825b0f682dda3ab1f9ac92"));
         assert(genesis.hashMerkleRoot == uint256("0x8ed7deab5aa103fa843fe679b48d6d3f22099ee2060dde73a5de9615b5bb01b3"));
 
-        vSeeds.push_back(CDNSSeedData("exp.monitorit4.me", "beacon.exp.monitorit4.me"));
+        vSeeds.push_back(CDNSSeedData("1", "95.179.207.150"));
+        vSeeds.push_back(CDNSSeedData("2", "45.32.176.163"));
+        vSeeds.push_back(CDNSSeedData("3", "167.86.81.28"));
+        vSeeds.push_back(CDNSSeedData("4", "136.244.80.206"));
+        vSeeds.push_back(CDNSSeedData("5", "207.180.248.46"));
+        vSeeds.push_back(CDNSSeedData("6", "207.180.248.20"));
+        vSeeds.push_back(CDNSSeedData("7", "144.91.83.26"));
+        vSeeds.push_back(CDNSSeedData("8", "164.68.108.39"));
+        vSeeds.push_back(CDNSSeedData("9", "164.68.122.73"));
+        vSeeds.push_back(CDNSSeedData("10", "164.68.101.111"));
+        vSeeds.push_back(CDNSSeedData("11", "207.180.228.213"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // b
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25); // B
@@ -206,7 +217,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false;       // TODO
+        fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
