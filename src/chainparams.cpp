@@ -195,18 +195,6 @@ public:
         assert(hashGenesisBlock == uint256("0x00000e34499c147af371b3ceb6bf565aa326fbe585825b0f682dda3ab1f9ac92"));
         assert(genesis.hashMerkleRoot == uint256("0x8ed7deab5aa103fa843fe679b48d6d3f22099ee2060dde73a5de9615b5bb01b3"));
 
-        vSeeds.push_back(CDNSSeedData("1", "95.179.207.150"));
-        vSeeds.push_back(CDNSSeedData("2", "45.32.176.163"));
-        vSeeds.push_back(CDNSSeedData("3", "167.86.81.28"));
-        vSeeds.push_back(CDNSSeedData("4", "136.244.80.206"));
-        vSeeds.push_back(CDNSSeedData("5", "207.180.248.46"));
-        vSeeds.push_back(CDNSSeedData("6", "207.180.248.20"));
-        vSeeds.push_back(CDNSSeedData("7", "144.91.83.26"));
-        vSeeds.push_back(CDNSSeedData("8", "164.68.108.39"));
-        vSeeds.push_back(CDNSSeedData("9", "164.68.122.73"));
-        vSeeds.push_back(CDNSSeedData("10", "164.68.101.111"));
-        vSeeds.push_back(CDNSSeedData("11", "207.180.228.213"));
-
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // b
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 25); // B
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 213);
@@ -328,8 +316,6 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
         // Testnet pivx BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
-
-        convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = true;
