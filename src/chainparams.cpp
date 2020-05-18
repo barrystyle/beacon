@@ -164,6 +164,10 @@ public:
         nFakeSerialBlockheightEnd = NEVER;
         nSupplyBeforeFakeSerial = 0 * COIN;
 
+        nHardenedStakeHeight = 240000;
+        nMinStakeAmount = 10 * COIN;
+        nMinStakeHistory = 180;
+
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
@@ -189,7 +193,6 @@ public:
         genesis.nTime = 1573572825;  // 11/12/2019 @ 3:33pm (UTC)
         genesis.nBits = 0x1e0ffff0;  // 00000ffff0000000000000000000000000000000000000000000000000000000
         genesis.nNonce = 488333;
-
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000e34499c147af371b3ceb6bf565aa326fbe585825b0f682dda3ab1f9ac92"));
@@ -296,6 +299,10 @@ public:
         // Fake Serial Attack
         nFakeSerialBlockheightEnd = -1;
         nSupplyBeforeFakeSerial = 0;
+
+        nHardenedStakeHeight = 10000;
+        nMinStakeAmount = 0.5 * COIN;
+        nMinStakeHistory = 60;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1454124731;
