@@ -154,8 +154,6 @@ public:
         nInvalidAmountFiltered = 0 * COIN;
         nBlockZerocoinV2 = NEVER;
         nBlockDoubleAccumulated = NEVER;
-        nEnforceNewSporkKey = 1500000000;    // new spork always active on this chain.
-        nRejectOldSporkKey = 0;
         nBlockStakeModifierlV2 = NEVER;      // no point adding a vulnerability he thought
         // Public coin spend enforcement
         nPublicZCSpends = NEVER;
@@ -219,8 +217,7 @@ public:
 
         nPoolMaxTransactions = 3;
         nBudgetCycleBlocks = 43200;
-        strSporkKey = "02f43efa160150cd397d637dac0b15191bdd402c0ca9ec143e1a45313a562c2ca9";
-        strSporkKeyOld = "";
+        strSporkKey = "034f33621606098f03a6c7d752a5e4cf1dfaac237acbbb0d16fe077cad1e3028f2";
         strObfuscationPoolDummyAddress = "bNFGLkVdVtTjz5RwgXwzxhC5MQxHbEo9yq";
         nStartMasternodePayments = genesis.nTime;
 
@@ -290,8 +287,6 @@ public:
         nBlockEnforceInvalidUTXO = 9902850; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 444020; //!> The block that zerocoin v2 becomes active
-        nEnforceNewSporkKey = 1566860400; //!> Sporks signed after Monday, August 26, 2019 11:00:00 PM GMT must use the new spork key
-        nRejectOldSporkKey = 1569538800; //!> Reject old spork key after Thursday, September 26, 2019 11:00:00 PM GMT
         nBlockStakeModifierlV2 = 1214000;
         // Public coin spend enforcement
         nPublicZCSpends = 1106100;
@@ -334,7 +329,6 @@ public:
         nPoolMaxTransactions = 2;
         nBudgetCycleBlocks = 144; //!< Ten cycles per day on testnet
         strSporkKey = "04E88BB455E2A04E65FCC41D88CD367E9CCE1F5A409BE94D8C2B4B35D223DED9C8E2F4E061349BA3A38839282508066B6DC4DB72DD432AC4067991E6BF20176127";
-        strSporkKeyOld = "04A8B319388C0F8588D238B9941DC26B26D3F9465266B368A051C5C100F79306A557780101FE2192FE170D7E6DEFDCBEE4C8D533396389C0DAFFDBC842B002243C";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
         nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
