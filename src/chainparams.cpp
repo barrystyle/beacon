@@ -162,7 +162,8 @@ public:
         nFakeSerialBlockheightEnd = NEVER;
         nSupplyBeforeFakeSerial = 0 * COIN;
 
-        nHardenedStakeHeight = 240000;
+        // Params for hardfork
+        nHardenedStakeHeight = 280000;
         nMinStakeAmount = 10 * COIN;
         nMinStakeHistory = 180;
 

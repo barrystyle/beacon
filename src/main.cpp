@@ -3142,6 +3142,27 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                          REJECT_INVALID, "bad-cb-amount");
     }
 
+    //Check that the stake is distributed evenly between the staker and the masternode
+    bool isStake = block.nNonce == 0;
+    bool evenRewardEnforced = pindex->nHeight > Params().HardenedStakeHeight();
+    unsigned int stakeRecipientSize = block.vtx[isStake].vout.size() - (int)isStake;
+    LogPrintf("block %d has %d recipients\n", pindex->nHeight, stakeRecipientSize);
+    if (stakeRecipientSize == 1) {
+        LogPrintf("  - block does not honour masternode payment\n");
+        if (evenRewardEnforced)
+            return false;
+    } else {
+        auto mnOut = block.vtx[1].vout[stakeRecipientSize].nValue;
+        auto mnExp = GetMasternodePayment(pindex->nHeight, nExpectedMint, 0, false);
+        if (mnExp - mnOut > 100) {
+            LogPrintf("  - masternode isnt receiving full reward (expected %llu, found %llu)\n", mnExp, mnOut);
+            if (evenRewardEnforced)
+                return false;
+        } else {
+            LogPrintf("  - masternode is receiving expected reward (expected %llu, found %llu)\n", mnExp, mnOut);
+        }
+    }
+
     // Ensure that accumulator checkpoints are valid and in the same state as this instance of the chain
     AccumulatorMap mapAccumulators(Params().Zerocoin_Params(pindex->nHeight < Params().Zerocoin_Block_V2_Start()));
     if (!ValidateAccumulatorCheckpoint(block, pindex, mapAccumulators)) {
