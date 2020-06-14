@@ -3142,6 +3142,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                          REJECT_INVALID, "bad-cb-amount");
     }
 
+    if (IsSporkActive(SPORK_17_FAIR_PAY_CHECKS))
+    {
+
     //Check that the stake is distributed evenly between the staker and the masternode
     bool isStake = block.nNonce == 0;
     bool evenRewardEnforced = pindex->nHeight > Params().HardenedStakeHeight();
@@ -3161,6 +3164,8 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         } else {
             LogPrintf("  - masternode is receiving expected reward (expected %llu, found %llu)\n", mnExp, mnOut);
         }
+    }
+
     }
 
     // Ensure that accumulator checkpoints are valid and in the same state as this instance of the chain
